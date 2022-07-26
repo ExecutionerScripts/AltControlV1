@@ -288,7 +288,7 @@ local function Framework(message,oper)
 
     end
 end
-
+		end
 
 game:service"ReplicatedStorage".DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(data) 
     local user = data.FromSpeaker
@@ -297,6 +297,5 @@ game:service"ReplicatedStorage".DefaultChatSystemChatEvents.OnMessageDoneFilteri
     Framework(msg,v.UserId)
     end
 end)
-
 
 
